@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="inputForm" type="submit">
+            <input type="text" placeholder="Enter the city" class="inputText" id="inputCity">
+            <button type="submit" class="searchButton" id="button"></button>
+        </form>
+        <main class="main">
+        <div class="leftContent">
+            <div class="content content--active">
+                <div class="now-content">
+                    <h1 id="now_deg">14 &deg;</h1>
+                    <div>
+                        <img class="main-weather-icon" src="" alt="weather-icon">
+                    </div>
+                    <div class="current-city-info">
+                        <h2 id="now_city">Aktobe</h2>
+                        <button class="like" type="button">
+                            <svg width="22" height="22" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="fill-color-like" opacity="0.7" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.5 1C15.0556 1 12.8556 2.7875 12 5.125C11.1444 2.7875 8.94444 1 6.5 1C3.44444 1 1 3.6125 1 7.1875C1 12 5.27778 16.125 12 23C18.7222 16.125 23 12 23 7.1875C23 3.6125 20.5556 1 17.5 1Z"
+                                    stroke="black" stroke-width="2" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-details">
+                    <h2 class="details_city">Aktobe</h2>
+                    <ul class="details__info">
+                        <li class="details__item">
+                            <p class="details__temp">Temperature: <span class="details__temp-span">14 &deg;</span></p>
+                        </li>
+                        <li class="details__item">
+                            <p class="details__feel">Feels like: <span class="details__feel-span">10 &deg;</span></p>
+                        </li>
+                        <li class="details__item">
+                            <p class="details__weather">Weather: <span class="details__weather-span">Clouds</span></p>
+                        </li>
+                        <li class="details__item">
+                            <p class="details__sunrise">Sunrise: <span class="details__sunrise-span">03:21</span></p>
+                        </li>
+                        <li class="details__item">
+                            <p class="details__sunset">Sunset: <span class="details__sunset-span">18:54</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <h1 class="forecast__city">Aktobe</h1>
+                <div class="content-forecast">
+                </div>
+            </div>
+        <ul class="switchTabs">
+            <li class="tabs tabs--active">Now</li>
+            <li class="tabs">Details</li>
+            <li class="tabs">Forecast</li>
+        </ul>
+    </div>
+    <div class="rightContent">
+        <div class="added-city">
+            <h2 class="added-city__title" >Added Locations:</h2>
+        </div>
+        <ul class="list-cities" id="listAddedLocation">
+            <!-- <li class="item-city example-location"><button class="text-city">Amur</button><button class="delete-city" id="delete"><img class="img-city" src="./src/delete.png" alt="delete city"></button></li> -->
+        </ul>
+    </div>
+        </main>
+    <script src="./js/htmlobjects.js" type="module"></script>
+    <script src="./js/switch_tabs.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/favorite.js" type="module"></script>
+    <script src="./js/render.js" type="module"></script>
+    <script src="./js/storage.js" type="module"></script>
+    <script src="./js/additional_functions.js" type="module"></script>
+</body>
+
+</html>
