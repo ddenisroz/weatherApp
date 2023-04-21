@@ -28,7 +28,7 @@ function initializeCityUrlAndTakeData(event) {
 //Запрос с api для первой вкладки
 
 function create_url_request(cityName) {
-    const serverUrl = 'http://api.openweathermap.org/data/2.5/weather';
+    const serverUrl = 'https://api.openweathermap.org/data/2.5/weather';
     const apiKey = '795fde4879f1b290f7a0cfcf9cb51104';
     const url = `${serverUrl}?q=${cityName}&appid=${apiKey}&units=metric`;
     

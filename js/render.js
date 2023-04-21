@@ -5,7 +5,7 @@ const {details_city, details_deg, details_feel, details_weather_description, sun
 
 function renderNOW(obj) {
     now_deg.textContent = `${obj.cityTemperature} °`;
-    now_weatherpic.src = `http://openweathermap.org/img/wn/${obj.weatherConditionsImgSrc}@4x.png`;
+    now_weatherpic.src = `https://openweathermap.org/img/wn/${obj.weatherConditionsImgSrc}@4x.png`;
     now_city.textContent = obj.cityName;
     inputText.value = '';
 }
@@ -40,7 +40,7 @@ function forecast_create_boxes(forecastList, index) {
     const forecastTemp = `Temperature: ${(forecastList[index].main.temp).toFixed()}°`;
     const forecastFeelsLike = `Feels like: ${(forecastList[index].main.feels_like).toFixed()}°`;
     const forecastWeatherCondition = forecastList[index].weather[0].main;
-    const forecastWeatherConditionImg = `http://openweathermap.org/img/wn/${forecastList[index].weather[0].icon}@4x.png`; 
+    const forecastWeatherConditionImg = `https://openweathermap.org/img/wn/${forecastList[index].weather[0].icon}@4x.png`; 
 
     const forecast_box = document.createElement('div');
     forecast_box.classList.add('forecast__short-info');
